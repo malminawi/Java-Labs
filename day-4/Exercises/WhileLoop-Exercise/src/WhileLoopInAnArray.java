@@ -48,11 +48,17 @@ public class WhileLoopInAnArray {
 
 			 index ++;
 
-			 System.out.print(Arrays.toString(theArray));
+			 
 			 
 		 }while(index  <theArray.length);
+		 System.out.println(Arrays.toString(theArray));
 		 
 		 
+		 System.out.println(" ");
+
+		 System.out.println("third part of the exercise");
+		 System.out.println(" ");
+
 		 //Use a for loop to print each element of the array. 
 		 //Unless that element is a multiple of four or six. 
 		 //If it's a multiple of four print FOUR!!. 
@@ -61,7 +67,18 @@ public class WhileLoopInAnArray {
 		 
 		 
 		 
-		 
+		 for(int i = 0; i< theArray.length ;i++) {
+			 int currentElement = theArray[i];
+			 if (currentElement % 4 == 0 && currentElement % 6 == 0) {
+				 System.out.println("FOUR!!SIX!!");
+			 }else if (currentElement % 4 == 0 ) {
+				 System.out.println("FOUR!!");
+			 }else if (currentElement % 6 == 0) {
+				 System.out.println("SIX!!");
+			 }
+			 else 
+				 System.out.println(currentElement);
+		 }
 		 
 		 
 		 
