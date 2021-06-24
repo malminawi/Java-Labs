@@ -2,6 +2,7 @@ import java.util.Arrays;
 public class WhileLoopInAnArray {
 	public static void main(String[] args) {
 //Create a while loop that stores the numbers one through fifty in an array.
+		System.out.println("Create a while loop that stores the numbers one through fifty in an array.");
 		int [] theArray = new int[50];
 		int index = 0;
 		int counter = 1;
@@ -12,29 +13,44 @@ public class WhileLoopInAnArray {
 			 counter ++;
 			 
 		 }
-		 
 		 System.out.println(Arrays.toString(theArray));
 		
+		 System.out.println(" ");
 
 
 //Use a do while loop to add five to all the odd numbers in the array.
 
+//One solution without using the Array library
+//		 System.out.println("Adding 5 to odd numers, without using the Array library ");
+//		 index = 0;
+//		 counter = 0;
+//		 do{
+//			 if ((theArray[index])%2 != 0) {
+//				 theArray[index] = theArray[index] +5;
+//			 }
+//			 System.out.print(theArray[counter] + " ");
+//
+//			 index +=1;
+//
+//			 counter +=1;
+//			 
+//		 }while(index <theArray.length);
+		 
+		 System.out.println("Use a do while loop to add five to all the odd numbers in the array. ");
 
 		 index = 0;
-		 counter = 0;
-		 
 		 do{
-			 if ((theArray[index])%2 != 0) {
-				 theArray[index] = theArray[index] +5;
-			 }
-			 System.out.println(theArray[counter]);
-
-			 index +=1;
-
-			 counter +=1;
+			 int currentElement = theArray[index];
 			 
-		 }while(counter <50);
-		 
+			 if (currentElement%2 != 0) {
+				 theArray[index] = currentElement +5;
+			 }
+
+			 index ++;
+
+			 System.out.print(Arrays.toString(theArray));
+			 
+		 }while(index  <theArray.length);
 		 
 		 
 		 //Use a for loop to print each element of the array. 
