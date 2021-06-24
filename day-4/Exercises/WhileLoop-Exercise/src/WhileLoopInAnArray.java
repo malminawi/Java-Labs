@@ -2,6 +2,7 @@ import java.util.Arrays;
 public class WhileLoopInAnArray {
 	public static void main(String[] args) {
 //Create a while loop that stores the numbers one through fifty in an array.
+		
 		System.out.println("Create a while loop that stores the numbers one through fifty in an array.");
 		int [] theArray = new int[50];
 		int index = 0;
@@ -11,12 +12,9 @@ public class WhileLoopInAnArray {
 			 theArray[index] = counter;
 			 index ++;
 			 counter ++;
-			 
 		 }
-		 System.out.println(Arrays.toString(theArray));
+		 System.out.println(Arrays.toString(theArray) + "\n");
 		
-		 System.out.println(" ");
-
 
 //Use a do while loop to add five to all the odd numbers in the array.
 
@@ -51,14 +49,11 @@ public class WhileLoopInAnArray {
 			 
 			 
 		 }while(index  <theArray.length);
-		 System.out.println(Arrays.toString(theArray));
+		 System.out.println(Arrays.toString(theArray)+ "\n");
 		 
 		 
-		 System.out.println(" ");
 
 		 System.out.println("third part of the exercise");
-		 System.out.println(" ");
-
 		 //Use a for loop to print each element of the array. 
 		 //Unless that element is a multiple of four or six. 
 		 //If it's a multiple of four print FOUR!!. 
